@@ -1,10 +1,90 @@
 @import "reset.css";
 @import "fonts.css";
+@import "var.css";
 
-*{
-  font-family: "NanumGothicCoding";
+
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
 }
 
-h1{
-  font-family: "NanumGothicCoding";
+.background{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background img{
+  position: absolute;
+  top: -3%;
+  height: 120vh;
+  width: 100vw;
+  animation: move 0.8s infinite ease-in-out alternate;
+}
+@keyframes move{
+  0%{
+    transform: translateY(-3%);
+  }50%{
+    transform: translateY(+3%);
+  }
+}
+
+.background .whiteB{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  animation: blink 0.3s infinite alternate;
+}
+@keyframes blink {
+  0%{
+    opacity: 0;
+  }100%{
+    opacity: .2;
+  }
+}
+
+.title{
+  position: absolute;
+  margin-top: 50px;
+  margin-left: 50px;
+}
+.title img{
+  width: 1100px;
+  filter: drop-shadow(0 0 1rem rgba(0,0,0, 0.7));
+}
+
+.menu{
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-evenly;
+  width: 620px;
+  margin-top: 50vh;
+}
+
+.menu .sub{
+  margin-bottom: 50px;
+  background-color: black;
+  height: 120px;
+  border: 10px solid var(--pink);
+  position: relative;
+}
+
+.menu .sub a{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  font-weight: bold;
+  font-size: 60px;
+  color: white;
+}
+.menu .sub a:hover{
+  color: var(--pink);
 }
