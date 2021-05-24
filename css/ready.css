@@ -27,31 +27,30 @@ body{
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 85px;
+  margin-top: 5vh;
 }
 .title img{
-  height: 520px;
+  height: 50vh;
 }
 
 .menu{
   position: absolute;
   background-color: rgba(0,0,0,0.8);
-  width: 525px;
-  height: 375px;
   display: flex;
   flex-direction: column;
   align-content: center;
   left: 50%;
   transform: translateX(-50%);
-  margin-top: 660px;
-  justify-content: space-evenly;
+  bottom: 0;
+  margin-bottom: 3vh;
   text-align: left;
+  padding: 15px 40px;
 }
 .menu a{
-  padding-left: 40px;
   font-weight: bold;
-  font-size: 60px;
+  font-size: 2.5rem;
   color: white;
+  line-height: 1.5;
 }
 .menu a:hover{
   color: var(--pink);
@@ -61,11 +60,11 @@ footer{
   position: absolute;
   bottom: 0;
   margin-left: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 3vh;
 }
 footer a{
   color: white;
-  font-size: 30px;
+  font-size: 2rem;
 }
 footer a:hover{
   color: var(--pink);

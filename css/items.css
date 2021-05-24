@@ -1,0 +1,57 @@
+@import "reset.css";
+@import "fonts.css";
+@import "var.css";
+
+body{
+    width: 100%;
+    height: 100%;
+    background-color: var(--green);
+    overflow: hidden;
+}
+
+.title{
+    padding-top: 5rem;
+    padding-left: 4rem;
+}
+.title p{
+    font-weight: bold;
+    font-size: 5rem;
+    color: white;
+}
+
+.menu__container{
+    margin-top: 7%;
+    margin-bottom: 500px;
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 100%;
+}
+.menu__container a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 30vw;
+    max-height: 30vw;
+    margin: 0 auto;
+    background-color: rgba(0,0,0,0.3);
+    position: relative;
+}
+.menu__container p{
+    font-weight: bold;
+    font-size: 3rem;
+    line-height: 1.2;
+    text-align: center;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu__container p:hover{
+    color: var(--pink);
+}
+.menu__container > a > img{
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
