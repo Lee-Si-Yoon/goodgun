@@ -23,10 +23,15 @@ body{
   left: 0;
 }
 
-.title{
+.container{
   position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title{
   margin-top: 5vh;
 }
 .title img{
@@ -34,23 +39,22 @@ body{
 }
 
 .menu{
-  position: absolute;
+  margin-top: 5vh;
   background-color: rgba(0,0,0,0.8);
   display: flex;
   flex-direction: column;
-  align-content: center;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  margin-bottom: 3vh;
   text-align: left;
   padding: 15px 40px;
+  max-width: 20vw;
 }
 .menu a{
   font-weight: bold;
   font-size: 2.5rem;
   color: white;
   line-height: 1.5;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .menu a:hover{
   color: var(--pink);
